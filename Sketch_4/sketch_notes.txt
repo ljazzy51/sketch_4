@@ -1,0 +1,18 @@
+Ideas and Notes for Sketch 4 -- Due 04/21/2023 @ 12:00pm
+
+Sketch MUST inclue:
+    - Heavy use of imagery and text 
+    - Manipulation of time 
+    - Animation 
+    - Movements
+    - Play with location, color, pixels, and absence
+The goal of sketch 4 is to create a generative design that animates a story and creates an interactive narrative
+
+This sketch will be a "bullet journal" that allows teh user to interactively create a love letter 
+This will include both text and imagery
+
+04/11/2023:
+    - started by making the function to create the bullet page where the letter will be written
+    - also uploaded the images that will be used in the program
+    - added the front cover and made it so if you click on the front cover it "opens" to the jouranl page 
+    - imported a font and styled it so that the text fits within the lines of the journal 
