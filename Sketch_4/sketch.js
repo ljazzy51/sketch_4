@@ -6,6 +6,7 @@ let ink_splatter;
 let ink_well;
 let cover;
 
+
 function preload(){
   pen = loadImage('data/fountain_pen.png');
   vase = loadImage('data/flowers_one.png');
@@ -25,6 +26,7 @@ function draw() {
   if (cover_clicked == true){
     writing(handwriting);
   }
+  new_line();
 }
 
 

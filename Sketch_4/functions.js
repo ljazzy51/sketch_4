@@ -26,8 +26,35 @@ function open_journal(){
     }
 }
 
+let current_line = 'Hello World my name is lilyanne';
+let start_line = 100;
+let next_line = 150;
+let end_line = 1285;
+
 function writing(font){
     fill(224, 43, 137);
     textFont(font, 75);
-    text('Hello World', 100, 150);
+    text(current_line, start_line, next_line);
+    print(textWidth(current_line));
+}
+let nline_start;
+
+function new_line(){
+  if(textWidth(current_line) >= end_line){
+    current_line = '';
+    next_line = next_line + 80;
+    text(current_line, start_line, next_line);
+    //current_line = '';
+  }
+}
+
+function keyTyped() {
+  if (keyCode >= 32) {
+    current_line += key;
+    print(current_line);
+  }
+  if(keyCode == DELETE){
+    current_line = current_line.length - 1;
+    print(current_line);
+  }
 }

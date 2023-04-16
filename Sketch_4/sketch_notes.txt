@@ -16,3 +16,10 @@ This will include both text and imagery
     - also uploaded the images that will be used in the program
     - added the front cover and made it so if you click on the front cover it "opens" to the jouranl page 
     - imported a font and styled it so that the text fits within the lines of the journal 
+
+04/15/2023:
+    - Working on setting up the function that allows the current line to break onto the next line once it reaches 
+    past the length of the screen - the size of the text
+    - Set up the function that adds a letter to the screen each time the user types something into the journal
+    The inspiration for this is coming from the generative design example: P_3_1_2_01
+    - Running into issues with wrapping the text as well as issues with getting the delete/backspace to work 
