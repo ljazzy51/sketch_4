@@ -25,7 +25,9 @@ function draw() {
   open_journal();
   if (cover_clicked == true){
     writing(handwriting);
+    use_pen();
   }
+  show_last();
   new_line();
 }
 

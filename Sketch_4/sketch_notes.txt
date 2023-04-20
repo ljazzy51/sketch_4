@@ -22,4 +22,13 @@ This will include both text and imagery
     past the length of the screen - the size of the text
     - Set up the function that adds a letter to the screen each time the user types something into the journal
     The inspiration for this is coming from the generative design example: P_3_1_2_01
-    - Running into issues with wrapping the text as well as issues with getting the delete/backspace to work 
+    - Running into issues with wrapping the text as well as issues with getting the delete/backspace to work
+
+04/20/2023:
+    - Today I figured out how to get the lines to break onto the next line and have the last line stay where it was written.
+    It feels really good having figured that out even though I didnt do it in the most efficient way but I just dont have the 
+    mental capacity to fight with it any longer due to the fact that I have so much work I have to do. 
+    - Added the pen feature to allow it to look like it was writing. 
+    - I also added some stylistic elements such as the ink splatters and the flowers on the sides of the cover and some instructions
+    on how to get to the journal 
+    - Im still working on how to figure out the issue with the backspace 
