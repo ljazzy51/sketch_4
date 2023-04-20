@@ -32,3 +32,4 @@ This will include both text and imagery
     - I also added some stylistic elements such as the ink splatters and the flowers on the sides of the cover and some instructions
     on how to get to the journal 
     - Im still working on how to figure out the issue with the backspace 
+    - Update after taking a break I was able to figure out how to get the backspace to work and now its working properly

@@ -90,6 +90,13 @@ function new_line(){
   }
 }
 
+function keyPressed(){
+  if(keyCode == BACKSPACE){
+    current_line = current_line.substring(0, current_line.length - 1);
+    print(current_line);
+  }
+}
+
 function keyTyped() {
   if (keyCode >= 32) {
     current_line += key;
@@ -97,12 +104,7 @@ function keyTyped() {
   }
 }
 
-function keyPressed(){
-  if(keyCode == DELETE){
-    current_line = current_line.length - 1;
-    text(current_line, start_line, next_line);
-  }
-}
+
 let penX;
 let penY;
 
