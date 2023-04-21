@@ -6,7 +6,7 @@ let ink_splatter;
 let ink_well;
 let cover;
 
-
+// preloads the images that are used in the program
 function preload(){
   pen = loadImage('data/fountain_pen.png');
   vase = loadImage('data/flowers_one.png');
@@ -16,11 +16,13 @@ function preload(){
   cover = loadImage('data/cover.png');
   handwriting = loadFont('data/writing.ttf');
 }
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255);
 }
 
+// the main code that isnt just event listeners that allow the program to run appropriately according to the user's interaction
 function draw() {
   open_journal();
   if (cover_clicked == true){

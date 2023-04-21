@@ -1,5 +1,6 @@
 // All of the functions for the program
 
+// creates the bullet journal design and the general spacing for the inside of the journal
 function draw_points(){
     for(let y = 0; y <= height; y += 80 ){
       for(let x = 0; x <= width; x += 80){
@@ -13,6 +14,7 @@ function draw_points(){
 
 let cover_clicked = false;
   
+// images and text that appear when the program is first runn before the user "opens the journal" by clicking on the cover
 function open_journal(){
     if(cover_clicked == false){
       image(cover, 142, 45);
@@ -35,6 +37,7 @@ function open_journal(){
     }
 }
 
+// formatt8ing for the cover and the images 
 function cover_words(font){
   fill(224, 43, 137);
   textFont(font, 50);
@@ -50,13 +53,14 @@ let end_line = 1285;
 
 let prev_line = '';
 
+// formatting for the font and style of the text
 function writing(font){
     fill(224, 43, 137);
     textFont(font, 75);
     text(current_line, start_line, next_line);
     print(textWidth(current_line));
 }
-//let nline_start;
+
 let line_y;
 line_y = [];
 let line_index = last_line.length - 1;
@@ -64,6 +68,7 @@ let y_index = line_y.length - 1;
 
 // I know this is not the cleanest way to do ths but I was losng my marbles with the for loops and other methods because it wouldnt work 
 // Finished is better than perfect! I dont have the energy to fight with this next line/ previous line anymore lol 
+// Displays the previous lines of code while it moves on to writing the next line of the letter 
 function show_last(){
   if(next_line > 70){
     text(last_line[0], start_line, line_y[0]);
@@ -79,6 +84,7 @@ function show_last(){
   }
 }
 
+// have the text move onto the next line when it reaches the edge of the browser while it is fully expanded 
 function new_line(){
   if(textWidth(current_line) >= end_line){
     prev_line = current_line;
@@ -90,6 +96,7 @@ function new_line(){
   }
 }
 
+//allow for letters in the current line to be deleted if you make a typo while you are writing 
 function keyPressed(){
   if(keyCode == BACKSPACE){
     current_line = current_line.substring(0, current_line.length - 1);
@@ -97,6 +104,7 @@ function keyPressed(){
   }
 }
 
+// add letters to the end of the current line of text as if you are writing new words 
 function keyTyped() {
   if (keyCode >= 32) {
     current_line += key;
@@ -108,8 +116,9 @@ function keyTyped() {
 let penX;
 let penY;
 
+//have the pen move with the text to appear that it is writing it 
 function use_pen(){
   penX = textWidth(current_line) + 80;
   penY = next_line;
-  image(pen, penX, penY - 80, 100, 100);
+  image(pen, penX, penY - 100, 100, 100);
 }
